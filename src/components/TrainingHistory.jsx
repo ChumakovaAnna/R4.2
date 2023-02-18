@@ -6,10 +6,12 @@ import List from "./List";
 
 export default function TrainingHistory() {
   const [trainings, setTrainings] = useState([
-    trainingItem('12.12.22', 10), 
-    trainingItem('10.12.22', 5), 
+    trainingItem('2002-05-05', 7), 
+    trainingItem('2001-12-12', 10), 
+    trainingItem('2000-02-01', 5), 
   ]);
 
+  console.log(trainings)
   const handleAdd = (date, distance) => {
 
     const index = trainings.findIndex(tr => tr.date.isSame(date));
